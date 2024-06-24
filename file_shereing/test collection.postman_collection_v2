@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "5137978c-b4c0-4679-bfe4-19c3371dfa0c",
+		"name": "test collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34362095"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/download/1/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/download/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/signup/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "roky",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rksaini6398@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/signup/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/login/?username=rohit&password=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "roky",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/?username=rohit&password=123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "rohit"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/upload/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/PROFESSIONAL/Downloads/file_example_XLSX_100.xlsx"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/upload/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/upload/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/upload/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/email_ver/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"detail\":\"722306\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/email_ver/"
+			},
+			"response": []
+		}
+	]
+}
